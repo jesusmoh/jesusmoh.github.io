@@ -1410,7 +1410,7 @@ body.is-preload #bg:before {
 	-ms-justify-content: space-between;
 	justify-content: space-between;
 	position: relative;
-	min-height: 100vh;
+
 	width: 100%;
 	padding: 2.2rem 1rem;
 	z-index: 3;
@@ -1529,7 +1529,7 @@ body.is-preload #bg:before {
 	-webkit-transition-delay: 0.25s;
 	-ms-transition-delay: 0.25s;
 	transition-delay: 0.25s;
-	padding: 3rem 2rem;
+	padding: 3rem 3rem;
 	max-height: 40rem;
 	overflow: hidden;
 }
@@ -1673,7 +1673,7 @@ body.is-preload #header .content .inner {
 @media screen and (max-width: 480px) {
 
 	#header {
-		padding: 1.5rem 0;
+		padding: 0.5rem 0;
 	}
 
 	#header .content .inner {
@@ -1912,7 +1912,7 @@ body.is-preload #header .content .inner {
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	width: 100%;
 	max-width: 100%;
-	margin-top: 2rem;
+	margin-top: 1rem;
 	text-align: center;
 }
 
