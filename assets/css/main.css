@@ -1991,34 +1991,37 @@ body {
 	display: inline-block;
 	position: relative;
 	padding: 10px 25px;
-
-	background-color: #4CC713;
-	color: white;
-
-	font-family: sans-serif;
+	border-radius: 15%;
+	background-color: #3b6b66;
+	color: #fff;
+	/* Use #fff instead of "white" for better readability */
 	text-decoration: none;
 	font-size: 0.9em;
 	text-align: center;
-	text-indent: 15px;
+	text-indent: 5px;
+	cursor: pointer;
+	/* Add cursor pointer to indicate it's a clickable button */
 }
 
 .buttonDownload:hover {
 	background-color: #333;
-	color: white;
+	color: #fff;
 }
 
 .buttonDownload:before,
 .buttonDownload:after {
-	content: ' ';
+	content: '';
 	display: block;
 	position: absolute;
 	left: 15px;
 	top: 52%;
+	transform: translateX(-50%);
+	/* Add this to center the icons horizontally */
 }
 
-/* Download box shape  */
+/* Download box shape */
 .buttonDownload:before {
-	width: 10px;
+	width: 8px;
 	height: 2px;
 	border-style: solid;
 	border-width: 0 2px 2px;
@@ -2030,29 +2033,25 @@ body {
 	height: 0;
 	margin-left: 3px;
 	margin-top: -7px;
-
 	border-style: solid;
 	border-width: 4px 4px 0 4px;
 	border-color: transparent;
 	border-top-color: inherit;
-
 	animation: downloadArrow 2s linear infinite;
 	animation-play-state: paused;
 }
 
 .buttonDownload:hover:before {
-	border-color: #4CC713;
+	border-color: #df9a1a;
 }
 
 .buttonDownload:hover:after {
-	border-top-color: #4CC713;
+	border-top-color: #9c0c18;
 	animation-play-state: running;
 }
 
 /* keyframes for the download icon anim */
 @keyframes downloadArrow {
-
-	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
 	0% {
 		margin-top: -7px;
 		opacity: 1;
@@ -2060,7 +2059,6 @@ body {
 
 	0.001% {
 		margin-top: -15px;
-		opacity: 0;
 	}
 
 	50% {
