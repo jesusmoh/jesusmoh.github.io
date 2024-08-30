@@ -1990,14 +1990,14 @@ body {
 }
 
 .buttonDownload {
-	background-color: #1b2f31;
+	background-color: #1B3044;
 	display: inline-block;
 	position: relative;
 
 	border-radius: 50px;
 	color: #fff;
 	/* Use #fff instead of "white" for better readability */
-	width: 14em;
+	width: 18em;
 
 	cursor: pointer;
 	/* Add cursor pointer to indicate it's a clickable button */
