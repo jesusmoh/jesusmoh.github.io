@@ -1993,7 +1993,8 @@ body {
 	background-color: #1B3044;
 	display: inline-block;
 	position: relative;
-
+	margin-bottom: 15px;
+	padding: 10px;
 	border-radius: 50px;
 	color: #fff;
 	/* Use #fff instead of "white" for better readability */
