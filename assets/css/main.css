@@ -1249,26 +1249,6 @@ button {
 }
 
 
-
-#bg:before {
-	-moz-transition: background-color 2.5s ease-in-out;
-	-webkit-transition: background-color 2.5s ease-in-out;
-	-ms-transition: background-color 2.5s ease-in-out;
-	transition: background-color 2.5s ease-in-out;
-	-moz-transition-delay: 0.75s;
-	-webkit-transition-delay: 0.75s;
-	-ms-transition-delay: 0.75s;
-	transition-delay: 0.75s;
-
-	background-size: auto,
-		256px 256px;
-	background-position: center,
-		center;
-	background-repeat: no-repeat,
-		repeat;
-	z-index: 2;
-}
-
 #bg:after {
 	-moz-transform: scale(1.125);
 	-webkit-transform: scale(1.125);
