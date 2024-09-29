@@ -1259,7 +1259,7 @@ button {
 	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 	background-image: url("../../images/rr2.png");
-	background-position: center;
+	background-position: 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -2059,19 +2059,32 @@ body {
 *{padding:0;margin:0;}
 
 
-.float{
-	position:fixed;
-	width:fit-content;
-	height:85px;
-	bottom:60px;
-	right:10px;
-	background-color:rgba(0, 204, 153, 0.418);
-	color:#FFF;
-	border-radius:100px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
+
+.float {
+    position: fixed;
+    width: fit-content;
+    bottom: 70%;
+    right: 15px;
+    background-color: #49b31b;
+    color: #FFF;
+    border-radius: 100px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    padding: 8px;
 }
 
-.my-float{
-	margin-top:22px;
+
+.f2loat{
+	position:fixed;
+	width:fit-content;
+	right:3%;
+	bottom:94%;
+	background-color:rgb(10, 23, 145);
+	border-radius:100px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #e1f720;
+	font-size: 16px;
+	color: rgb(245, 245, 245);
+	padding:3px;
 }
+
