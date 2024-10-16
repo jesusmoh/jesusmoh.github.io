@@ -8,6 +8,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
+
+
+
+
 </head>
 
 <body class="is-preload">
@@ -18,116 +22,102 @@
       <div class="inner">
         <!-- Header -->
         <header id="header">
-          <a href="index.html" class="logo"><strong>JESUS MANUEL ORTIZ</strong></a>
-          <ul class="icons">
-            <li class="icon brands fa-whatsapp"><a href="https://wa.me/17866305797?text=Hi?">17866305797</a></li>
+          <a href="index.html" class="logo animated fadeInDown">
+            <strong>I'm a problem solver, not just a &lt;coder/&gt</strong><br>
+            As a Software Engineer and freelancer with base in Miami, I specialize in custom software solutions
+            and IT challenges.
+          </a>
+
+          <ul class="icons animated fadeInDown ">
+            <li class="icon brands fa-whatsapp"><a href="https://wa.me/17866305797?text=Hi?">7866305797</a></li>
             <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/jesusmoh">jesusmoh</a></li>
+            <a href="https://cal.com/jesusmoh"> &nbsp;<i class="fas fa-calendar-alt fa">Booking</i>
+            </a>
           </ul>
         </header>
-       
-        <!-- Banner -->
-        <section id="banner">
-          <div class="content">
-            <h4>I'm a problem solver, not just a &lt;coder/&gt</h4>
-            <p>Software engineer with expertise in custom software solutions and IT troubleshooting,
-              with base in Miami and decade of experience in the IT industry.
 
-            </p>
-            <h4> Expertise Areas for Developer scope</h4>
-            <p>
-              Spring Cloud | Selenium | Test-containers | JMeter | Git | Jira | Wix | SEO |AWS | REST | SOAP | API
-              design | SDKs | Postgres | Microservices | JS | S3 | Angular | PHP | Distributed Systems | Confluence |
-              Database | Design | SQL | NoSQL | MVC | Android | Java | Docker | Linux | WordPress | HL7 | ETL | HCE |
-              WooCommerce | PCI | Serverless | JSF | Jakarta | JavaEE.
-            </p>
 
-            <h4>Expertise Areas for IT/SysAdmin scope</h4>
-            <p></p>
-            <p>
-              Active Directory | RAID | HProline | Hyper-V | Server | Squid Proxy | Load Balancer | SQL Server | Windows
-              Server Family | VPN | Dropbox | Workstation Tunning | Laptop Repair| Administration of network
-              resources | TeamViewer .
-            </p>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-arrow-up">
 
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-              <div class="child"><h4>Certifications</h4>
-                <li><a href="https://www.credly.com/badges/6b61c437-928d-4be6-9f60-180a9af32068/linked_in_profile">AWS
-                    Certified Developer Associate</a></li>
-                <li><a href="https://www.credly.com/badges/243481f4-3bd3-43cc-be1f-a84ae639effd/linked_in_profile">AWS
-                    Certified Solutions Architect Associate</a></li>
-                <li><a href="https://www.credly.com/badges/f7f2eec0-73ad-486e-b239-6d6111ef537f/linked_in_profile">AWS
-                    Certified Cloud Practitioner</a></li>
-                <li><a href="https://verify.acloud.guru/5BCFE3B8F245">ACG Kubernetes & Terraform</a></li>
-                <li><a href="https://verify.acloud.guru/AFA918430461">AWS DynamoDB Deep Dive</a></li></div>
-              <div class="child">
-                <br>
-                <h4>Education</h4>
-                <li>Bachelor of Science in Software Engineering at the Technological University of Havana</li></div>
-          </div>
-
-            
-
-         
+        </button>
 
 
 
-          </div>
+        <script>
+          // Get the button
+          let mybutton = document.getElementById("myBtn");
 
-        </section>
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () { scrollFunction() };
 
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth' // This enables smooth scrolling
+            });
+          }
+        </script>
         <!-- Section -->
         <section>
-
           <div class="features" style="flex: content;">
             <article>
               <span class="icon solid fa fa-laptop"></span>
-              <div class="content">
-                <h3>Computers services</h3>
+              <div class="content animated fadeInDown">
+                <h5>Computers</h5>
                 <ul>
-                  <li>Hardware Repairs & Upgrades</li>
-                  <li>Software Installation & Troubleshooting</li>
-                  <li>Virus & Malware Removal</li>
-                  <li>Data Recovery & Backup Solutions</li>
-                  <li>Network Setup & Security</li>
+                  <li>Repairs & Upgrades</li>
+                  <li>Software Installation</li>
+                  <li>Troubleshooting</li>
+                  <li>Virus & Data Recovery</li>
+                  <li>Networking & Security</li>
+                </ul>
+              </div>
+            </article>
+            <article>
+              <span class="icon solid fa fa-code"></span>
+              <div class="content animated fadeInDown">
+                <h5>Aplications & Web pages</h5>
+                <ul>
+                  <li>Responsive Web Design</li>
+                  <li>Web Applications</li>
+                  <li>E-commerce Solutions</li>
+                  <li>API Development</li>
+                  <li>Integration</li>
                 </ul>
               </div>
             </article>
             <article>
               <span class="icon solid fa fa-credit-card"></span>
-              <div class="content">
-                <h3>Budges and Projects services</h3>
+              <div class=" content animated fadeInDown">
+                <h5>Budges & Projects</h5>
                 <li>IT investments</li>
-                <li>Enhanced project visibility and control</li>
-                <li>Efficient resource utilization</li>
+                <li>Planning Projects</li>
                 <li>Timely project delivery</li>
-                <li>Reduced operational costs</li>
+                <li>Reduced IT costs</li>
+                <li>Efficient resource utilization</li>
               </div>
             </article>
-            <article>
-              <span class="icon solid fa fa-code"></span>
-              <div class="content">
-                <h3>Aplications and Web pages services</h3>
-                <ul>
-                  <li>Responsive Web Design</li>
-                  <li>Custom Web Applications</li>
-                  <li>E-commerce Solutions</li>
-                  <li>Mobile App Development</li>
-                  <li>Content Management Systems (CMS)</li>
-                  <li>API Development and Integration</li>
-                </ul>
-              </div>
-            </article>
+
             <article>
               <span class="icon solid fa fa-database"></span>
-              <div class="content">
-                <h3>Servers and Cloud services</h3>
+              <div class="content animated fadeInDown">
+                <h5>Servers and Cloud</h5>
                 <ul>
-                  <li>Increased Scalability and Flexibility</li>
-                  <li>Enhanced Security and Compliance</li>
-                  <li>Cost-Effective Infrastructure</li>
-                  <li>AWS (Amazon Web Services)</li>
-                  <li>Improved Performance and Reliability</li>
-                  <li>Streamlined IT Management</li>
+                  <li>Increased Scalability</li>
+                  <li>Increased Flexibility</li>
+                  <li>Enhanced Security</li>
+                  <li>Enhanced Compliance</li>
+                  <li>Decrease cost</li>
+
                 </ul>
               </div>
             </article>
@@ -137,53 +127,80 @@
 
         <!-- Section -->
         <section>
-         
-          <div class="posts">
-            <article>
-              <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-              <h3>Hiromi Asai : Brand Page</h3>
-              <p> Wix | SEO | Web Page | Fashion | SaaS </p>
-            </article>
-            <article>
-              <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-              <h3>SASA : Infrastructure  Deployment </h3>
-              <p> Hyper-V | FTP | Windows Server | HP Proline | RAID | Network resources </p>
 
+          <div class="posts ">
+            <article class="container">
+              <img src="images/pic01.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="textimag">
+                  <p>HIROMI ASAI</p>
+                  <p> WIX|SEO|Fashion|SaaS|Web Page</p>
+                </div>
+              </div>
             </article>
-            <article>
-              <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-              <h3>Troubleshooting</h3>
-              <p>Active Directory | ETL | On-premise | Windows Server | PC Repair | Laptop Repair</p>
+            <article class="container">
+              <img src="images/pic04.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="textimag">
+                  <p>TROUBLESHOOTING</p>
+                  <p>Computers and Servers Repairs & Upgrades|Virus & Data Recovery|Laptop Repair</p>
+                </div>
+              </div>
+            </article>
 
+            <article class="container">
+              <img src="images/pic03.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="textimag">
+                  <p>AUTOMOTORS SERVICES S.A</p>
+                  <p>Hyper-V|Windows Server|HP Proline|RAID|Networking</p>
+                </div>
+              </div>
             </article>
-            <article>
-              <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-              <h3>Mental Wellness of Florida : Web Page </h3>
-              <p> Wix | SEO | Web | health industry | SaaS </p>
-
+            <article class="container">
+              <img src="images/pic05.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="textimag">
+                  <p>MENTAL WELLNESS OF FLORIDA</p>
+                  <p>Wix|SEO|Web|Health Industry|SaaS|Email</p>
+                </div>
+              </div>
             </article>
-            <article>
-              <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-              <h3>Mental Wellness of Florida : Mobile</h3>
-              <p> Wix | SEO | Web | health industry | SaaS </p>
-
+            <article class="container">
+              <img src="images/pic06.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="textimag">
+                  <p>MENTAL WELLNESS OF FLORIDA</p>
+                  <p>Wix|SEO|Mobile|Brand Design</p>
+                </div>
+              </div>
             </article>
-            <article>
-              <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-              <h3>Desing & Digital products</h3>
-              <p>IA | Adds | Edition | GPT | Pronts</p>
+            <article class="container">
+              <img src="images/pic07.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="textimag">
+                  <p>DESIGN</p>
+                  <p>IA|Adds|Edition|GPT|Pronts|Cards</p>
+                </div>
+              </div>
             </article>
-            <article>
-              <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-              <h3>SISNET : Mobile ERP Management </h3>
-              <p>Android | Sqlite | Rest | Docker | Java Backend | Rest API</p>
-
+            <article class="container">
+              <img src="images/pic08.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="textimag">
+                  <p>SISNET Mobile</p>
+                  <p>>Android|Sqlite|Rest|Docker|Java Backend|Rest API</p>
+                </div>
+              </div>
             </article>
-            <article>
-              <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-              <h3>Payment Gateway : Fiserv Uruguay</h3>
-              <p>Rest | Soap | Angular | Spring | Microservice | Spring Boot</p>
-
+            <article class="container">
+              <img src="images/pic09.jpg" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="textimag">
+                  <p>FISERV URUGUAY</p>
+                  <p>Rest|Soap|Angular|Spring|Microservice|Spring Boot</p>
+                </div>
+              </div>
             </article>
           </div>
         </section>
@@ -191,9 +208,6 @@
           <header class="main">
             <h2>Profesional Experience</h2>
           </header>
-
-
-
           <h4> Senior Software Development Engineer (II) at FISERV (Global Fintech)</h4>
           Team size: 5, May 2021 – April 2024, U.S.A
           <br>
@@ -365,7 +379,7 @@
             </div>
 
           </section>
-          </section>
+
 
       </div>
     </div>
@@ -375,14 +389,13 @@
       <div class="inner">
         <figure class="image">
           <img src="images/pic10.jpg" class="responsive-img" />
-
         </figure>
-        <article>
-          <header class="major">
-            <a href="https://cal.com/jesusmoh"> &nbsp;<i class="fas fa-calendar-alt fa-2x">&nbsp;Appointments&nbsp;</i>
-            </a>
-          </header>
-          <h2>Resume</h2>
+
+        <article class="animated fadeInDown">
+          <h4>JESUS MANUEL ORTIZ</h4>
+
+
+
           </header>
 
           <div>
@@ -393,6 +406,64 @@
           <div>
             <a href="https://jesusmoh.github.io/IT_jesusOrtizResume_jesusmoh89@gmail.com.pdf"
               class="animated3 zoomInDown buttonDownload">⬇️ Resume as PDF (IT Scope)</a>
+          </div>
+          <br>
+          <div>I am a Software Engineer with over 10 years of experience, including 7+ years as a Java full-cycle
+            developer. My focus
+            has been on architecture and quality. I am organized and hardworking with a proven track record of success
+            in diverse
+            projects across the Fintech, Retail, and IT Health Care sectors. My professional journey has included roles
+            such as
+            Senior Java Developer with cloud expertise and Full-Stack Developer for Angular and Android.</div>
+          </p>
+          <button onclick="typeWriter()">Show Developer Skills</button>
+          <p id="demo"></p>
+          <script>
+            var i = 0;
+            var txt = 'Spring Cloud | Selenium | Test-containers | JMeter | Git | Jira | Wix | SEO |AWS | REST | SOAP | API   design | SDKs | Postgres | Microservices | JS | S3 | Angular | PHP | Distributed Systems | Confluence | Database | Design | SQL | NoSQL | MVC | Android | Java | Docker | Linux | WordPress | HL7 | ETL | HCE  WooCommerce | PCI | Serverless | JSF | Jakarta | JavaEE';
+            var speed = 65;
+
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+          </script>
+          <button onclick="typeWriter2()">Show IT/SysAdmin Skills</button>
+          <p id="demo2"></p>
+          <script>
+            var i2 = 0;
+            var txt2 = 'Active Directory | RAID | HProline | Hyper-V | Server | Squid Proxy | Load Balancer | SQL Server | WindowsServer Family | VPN | Dropbox | Workstation Tunning | Laptop Repair | Administration of network resources | TeamViewer';
+            var speed2 = 65;
+
+            function typeWriter2() {
+              if (i2 < txt2.length) {
+                document.getElementById("demo2").innerHTML += txt2.charAt(i2);
+                i2++;
+                setTimeout(typeWriter2, speed2);
+              }
+            }
+          </script>
+
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <div class="child">
+              <h4>Certifications</h4>
+              <li><a href="https://www.credly.com/badges/6b61c437-928d-4be6-9f60-180a9af32068/linked_in_profile">AWS
+                  Certified Developer Associate</a></li>
+              <li><a href="https://www.credly.com/badges/243481f4-3bd3-43cc-be1f-a84ae639effd/linked_in_profile">AWS
+                  Certified Solutions Architect Associate</a></li>
+              <li><a href="https://www.credly.com/badges/f7f2eec0-73ad-486e-b239-6d6111ef537f/linked_in_profile">AWS
+                  Certified Cloud Practitioner</a></li>
+              <li><a href="https://verify.acloud.guru/5BCFE3B8F245">ACG Kubernetes & Terraform</a></li>
+              <li><a href="https://verify.acloud.guru/AFA918430461">AWS DynamoDB Deep Dive</a></li>
+            </div>
+            <div class="child">
+              <br>
+              <h4>Education</h4>
+              <li>Bachelor of Science in Software Engineering at the Technological University of Havana</li>
+            </div>
           </div>
         </article>
         <!-- Section -->
