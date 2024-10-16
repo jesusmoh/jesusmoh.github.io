@@ -3183,13 +3183,16 @@ button:disabled,
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background: rgba(228, 52, 52, 0.363);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: radial-gradient(
+    rgba(236, 6, 6, 0.979) 25%,
+    rgba(202, 59, 59, 0.418) 55%
+  );
 }
 
 #myBtn {
