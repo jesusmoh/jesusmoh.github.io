@@ -29,10 +29,16 @@
 }
 
 .textimag {
-  background-color: #ec3d26;
-  color: white;
-  font-size: 12px;
-  padding: 16px 16px;
+  background-color: #ec3d26; /* Bright background color */
+  color: white; /* Text color for contrast */
+  font-size: 14px; /* Slightly larger font size for readability */
+  padding: 20px; /* Increased padding for a more spacious look */
+  border-radius: 8px; /* Rounded corners for a modern appearance */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  line-height: 1.5; /* Improved line height for better readability */
+  text-align: center; /* Centered text for a balanced look */
+  max-width: 300px; /* Set a maximum width for better layout control */
+  margin: 10px auto; /* Center the element on the page */
 }
 
 .container:hover .middle {
@@ -280,8 +286,7 @@ textarea {
 
 a {
   -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  -webkit-transition: color 0.2s ease-in-out,
-    border-bottom-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
@@ -3189,10 +3194,7 @@ button:disabled,
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: radial-gradient(
-    rgba(236, 6, 6, 0.979) 25%,
-    rgba(202, 59, 59, 0.418) 55%
-  );
+  background: radial-gradient(rgba(236, 6, 6, 0.979) 25%, rgba(202, 59, 59, 0.418) 55%);
 }
 
 #myBtn {
@@ -3212,4 +3214,23 @@ button:disabled,
 
 #myBtn:hover {
   background-color: #dbc4c4;
+}
+
+/* Service Tags */
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.service-tags .tag {
+  background-color: rgba(230, 235, 237, 0.75);
+  border-radius: 0.375em;
+  padding: 0.25em 0.65em;
+  font-size: 0.9em;
+  color: #7f888f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
 }
