@@ -3245,3 +3245,12 @@ button:disabled,
 .animated-icon:hover {
   transform: scale(1.4); /* Slightly enlarges the icon on hover */
 }
+
+.animated-icon {
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for transform and filter */
+}
+
+.animated-icon:hover {
+  transform: translateY(-5px) scale(1.1); /* Move up by 5 pixels and scale up */
+  filter: drop-shadow(0px 6px 10px rgba(179, 35, 35, 0.76)); /* Add a subtle shadow effect */
+}
