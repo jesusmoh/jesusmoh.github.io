@@ -532,38 +532,6 @@
         </div>
 
         <article class="animated fadeInDown">
-
-          <button onclick="typeWriter()">Show Developer Skills</button>
-          <p id="demo"></p>
-          <script>
-            var i = 0;
-            var txt = 'Spring Cloud | Selenium | Test-containers | JMeter | Git | Jira | Wix | SEO |AWS | REST | SOAP | API   design | SDKs | Postgres | Microservices | JS | S3 | Angular | PHP | Distributed Systems | Confluence | Database | Design | SQL | NoSQL | MVC | Android | Java | Docker | Linux | WordPress | HL7 | ETL | HCE  WooCommerce | PCI | Serverless | JSF | Jakarta | JavaEE';
-            var speed = 15;
-
-            function typeWriter() {
-              if (i < txt.length) {
-                document.getElementById("demo").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-              }
-            }
-          </script>
-          <button onclick="typeWriter2()">Show IT/SysAdmin Skills</button>
-          <p id="demo2"></p>
-          <script>
-            var i2 = 0;
-            var txt2 = 'Active Directory | RAID | HProline | Hyper-V | Server | Squid Proxy | Load Balancer | SQL Server | WindowsServer Family | VPN | Dropbox | Workstation Tunning | Laptop Repair | Administration of network resources | TeamViewer';
-            var speed2 = 15;
-
-            function typeWriter2() {
-              if (i2 < txt2.length) {
-                document.getElementById("demo2").innerHTML += txt2.charAt(i2);
-                i2++;
-                setTimeout(typeWriter2, speed2);
-              }
-            }
-          </script>
-
           <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
             <div class="child">
               <h4>Certifications</h4>
@@ -576,11 +544,16 @@
               <li><a href="https://verify.acloud.guru/5BCFE3B8F245">ACG Kubernetes & Terraform</a></li>
               <li><a href="https://verify.acloud.guru/AFA918430461">AWS DynamoDB Deep Dive</a></li>
             </div>
+            <br>
             <div class="child">
               <br>
               <h4>Education</h4>
               <li>Bachelor of Science in Software Engineering at the Technological University of Havana (CUJAE)</li>
             </div>
+            <br>
+
+
+
           </div>
         </article>
         <!-- Section -->
@@ -599,6 +572,38 @@
                 ⬇️ Resume (IT Scope)
               </a>
             </button>
+          </div>
+          <br />
+          <div><button onclick="typeWriter()">Show Developer Skills</button>
+            <p id="demo"></p>
+            <script>
+              var i = 0;
+              var txt = 'Spring Cloud | Selenium | Test-containers | JMeter | Git | Jira | Wix | SEO |AWS | REST | SOAP | API   design | SDKs | Postgres | Microservices | JS | S3 | Angular | PHP | Distributed Systems | Confluence | Database | Design | SQL | NoSQL | MVC | Android | Java | Docker | Linux | WordPress | HL7 | ETL | HCE  WooCommerce | PCI | Serverless | JSF | Jakarta | JavaEE';
+              var speed = 15;
+
+              function typeWriter() {
+                if (i < txt.length) {
+                  document.getElementById("demo").innerHTML += txt.charAt(i);
+                  i++;
+                  setTimeout(typeWriter, speed);
+                }
+              }
+            </script>
+            <button onclick="typeWriter2()">Show IT/SysAdmin Skills</button>
+            <p id="demo2"></p>
+            <script>
+              var i2 = 0;
+              var txt2 = 'Active Directory | RAID | HProline | Hyper-V | Server | Squid Proxy | Load Balancer | SQL Server | WindowsServer Family | VPN | Dropbox | Workstation Tunning | Laptop Repair | Administration of network resources | TeamViewer';
+              var speed2 = 15;
+
+              function typeWriter2() {
+                if (i2 < txt2.length) {
+                  document.getElementById("demo2").innerHTML += txt2.charAt(i2);
+                  i2++;
+                  setTimeout(typeWriter2, speed2);
+                }
+              }
+            </script>
           </div>
         </section>
         <section>
