@@ -2643,7 +2643,7 @@ button:disabled,
     padding: 0 5em 0.1em 5em;
   }
   #main > .inner > section {
-    padding: 5em 0 3em 0;
+    padding: 2em 0 3em 0;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -2914,12 +2914,12 @@ button:disabled,
 }
 @media screen and (max-width: 1680px) {
   #header {
-    padding-top: 5em;
+    padding-top: 1em;
   }
 }
 @media screen and (max-width: 736px) {
   #header {
-    padding-top: 6.5em;
+    padding-top: 4.5em;
   }
   #header .logo {
     font-size: 1.25em;
@@ -3253,4 +3253,23 @@ button:disabled,
 .animated-icon:hover {
   transform: translateY(-5px) scale(1.1); /* Move up by 5 pixels and scale up */
   filter: drop-shadow(0px 6px 10px rgba(179, 35, 35, 0.76)); /* Add a subtle shadow effect */
+}
+.image-container-gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: solid 5px #ff3a48;
+}
+
+.image-gif {
+  margin: 0;
+  max-width: 50%;
+}
+
+.responsive-image-gif {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
