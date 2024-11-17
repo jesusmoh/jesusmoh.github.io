@@ -1,540 +1,358 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <meta name="description" content="Description of your website">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>jesus's Web Site</title>
 
-  <!-- Preload critical assets -->
-  <link rel="preload" href="assets/css/main.css" as="style">
-  <link rel="stylesheet" href="assets/css/main.css">
-
   <!-- Favicon -->
-  <link rel="icon" href="images/favi.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="images/favi.ico" type="image/x-icon">
+  <link rel="icon" href="assets/img/favi.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/favi.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
+<body class="index-page">
 
-<body class="is-preload">
-  <!-- Wrapper -->
-
-  <div id="wrapper">
-    <!-- Main -->
-    <div id="main">
-      <div class="inner">
-        <!-- Header -->
-        <header id="header">
-
-          <ul class="icons animated fadeInDown ">
-            <li class="icon brands fa-whatsapp animated-icon"><a href="https://wa.me/17866305797?text=Hi?">786 630
-                5797</a></li>
-            <li class="icon brands fa-linkedin animated-icon"><a
-                href="https://www.linkedin.com/in/jesusmoh">jesusmoh</a></li>
-            <a href="https://cal.com/jesusmoh"> &nbsp;<i class="fas fa-calendar-alt fa animated-icon">Booking</i>
-            </a>
-          </ul>
-        </header>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <br>
 
 
-
-        <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-arrow-up">
-        </button>
-        <script>
-          // Get the button
-          let mybutton = document.getElementById("myBtn");
-
-          // When the user scrolls down 20px from the top of the document, show the button
-          window.onscroll = function () { scrollFunction() };
-
-          function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              mybutton.style.display = "block";
-            } else {
-              mybutton.style.display = "none";
-            }
-          }
-
-          // When the user clicks on the button, scroll to the top of the document
-          function topFunction() {
-            window.scrollTo({
-              top: 0,
-              behavior: 'smooth' // This enables smooth scrolling
-            });
-          }
-        </script>
-        <!-- Section -->
-
-        <div class="logo animated fadeInDown" style="display: flex; flex-direction: column; align-items: center;">
-          <strong> Software Engineer, Freelancer & IT specialist.</strong>
-        </div>
-        <div class="image-container-gif">
-          <figure class="image-gif">
-            <img src="images/pp.gif" alt="" class="responsive-image-gif" />
-          </figure>
-        </div>
-
-
-
-
-        <section>
-          <div class="features" style="flex: content;">
-            <article>
-              <span class="icon solid fa fa-laptop animated-icon"></span>
-              <div class="content">
-                <h5>Computers</h5>
-                <ul>
-                  <li>Repairs & Upgrades</li>
-                  <li>Software Installation</li>
-                  <li>Troubleshooting</li>
-                  <li>Virus & Data Recovery</li>
-                  <li>Networking & Security</li>
-                </ul>
-              </div>
-            </article>
-            <article>
-              <span class="icon solid fa fa-code animated-icon"></span>
-              <div class="content">
-                <h5>Aplications & Web pages</h5>
-                <ul>
-                  <li>Responsive Web Design</li>
-                  <li>Web Applications</li>
-                  <li>E-commerce Solutions</li>
-                  <li>API Development</li>
-                  <li>Integration</li>
-                </ul>
-              </div>
-            </article>
-            <article>
-              <span class="icon solid fa fa-credit-card animated-icon"></span>
-              <div class=" content">
-                <h5>Budges & Projects</h5>
-                <li>IT investments</li>
-                <li>Planning Projects</li>
-                <li>Timely project delivery</li>
-                <li>Reduced IT costs</li>
-                <li>Efficient resource utilization</li>
-              </div>
-            </article>
-
-            <article>
-              <span class="icon solid fa fa-database animated-icon"></span>
-              <div class="content">
-                <h5>Servers and Cloud</h5>
-                <ul>
-                  <li>Increased Scalability</li>
-                  <li>Increased Flexibility</li>
-                  <li>Enhanced Security</li>
-                  <li>Enhanced Compliance</li>
-                  <li>Decrease cost</li>
-
-                </ul>
-              </div>
-            </article>
-
-          </div>
-        </section>
-
-        <!-- Section -->
-        <strong> Show cases</strong>
-        <section>
-          <div class="posts ">
-            <article class="container">
-              <img src="images/pic01.webp" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="textimag">
-                  HIROMI ASAI WEB PAGE
-                  <div class="service-tags">
-                    <span class="tag">WIX</span>
-                    <span class="tag">SEO</span>
-                    <span class="tag">Fashion</span>
-                    <span class="tag">SaaS</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="container">
-              <img src="images/pic09.webp" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="textimag">
-                  PAYMENT GATEWAY FISERV URUGUAY
-                  <div class="service-tags">
-                    <span class="tag">JAVA + Spring</span>
-                    <span class="tag">Angular 17</span>
-                    <span class="tag">SQL Server</span>
-                    <span class="tag">Spring Cloud</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="container">
-              <img src="images/pic17.webp" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="textimag">
-                  DR. ABAD WEB PAGE
-                  <div class="service-tags">
-                    <span class="tag">GoDaddy</span>
-                    <span class="tag">Web Design</span>
-                    <span class="tag">SEO</span>
-                    <span class="tag">IA</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="container">
-              <img src="images/pic04.webp" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="textimag">
-                  GENERAL TROUBLESHOOTING
-                  <div class="service-tags">
-                    <span class="tag">Repair Servers</span>
-                    <span class="tag">Repair Computers</span>
-                    <span class="tag">Repair Laptops</span>
-                    <span class="tag">Repair Routers</span>
-                  </div>
-
-                </div>
-              </div>
-            </article>
-
-            <article class="container">
-              <img src="images/pic03.webp" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="textimag">
-                  AUTOMOTORS SERVICES INFRASTRUCTURE DEPLOYMENT
-                  <div class="service-tags">
-                    <span class="tag">Windows Server</span>
-                    <span class="tag">RAID/Hyper-V</span>
-                    <span class="tag">HP Proline</span>
-                    <span class="tag">Networking</span>
-                  </div>
-
-                </div>
-              </div>
-            </article>
-            <article class="container">
-              <img src="images/pic05.webp" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="textimag">
-                  MENTAL WELLNESS OF FLORIDA WEB PAGE
-                  <div class="service-tags">
-                    <span class="tag">Health</span>
-                    <span class="tag">SEO</span>
-                    <span class="tag">Email server</span>
-                    <span class="tag">SaaS</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="container">
-              <img src="images/pic16.webp" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="textimag">
-                  BRAND DESIGN
-                  <div class="service-tags">
-                    <span class="tag">QR CODE</span>
-                    <span class="tag">BUSINESS CARD</span>
-                    <span class="tag">ANIMATIONS</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="container">
-              <img src="images/pic08.webp" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="textimag">
-                  <p>SISNET MOBILE APP & BACKEND</p>
-                  <div class="service-tags">
-                    <span class="tag">Android/SQLite</span>
-                    <span class="tag">JAVA/DOCKER</span>
-                    <span class="tag">JSF/PAYARA</span>
-                    <span class="tag">SOAP/REST</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="container">
-              <img src="images/pic15.webp" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="textimag">
-                  ECOMMERCE INTEGRATION
-                  <div class="service-tags">
-                    <span class="tag">Ecommerce</span>
-                    <span class="tag">WooCommerce</span>
-                    <span class="tag">PHP</span>
-                    <span class="tag">REST API</span>
-                    <span class="tag">CPanel</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="container">
-              <img src="images/pic06.webp" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="textimag">
-                  MENTAL WELLNESS OF FLORIDA
-                  <div class="service-tags">
-                    <span class="tag">Wix</span>
-                    <span class="tag">Brand Design</span>
-                    <span class="tag">Mobile</span>
-                    <span class="tag">Responsive</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="container">
-              <img src="images/pic07.webp" alt="Avatar" class="image" style="width:100%">
-              <div class="middle">
-                <div class="textimag">
-                  GENERAL DESIGN
-                  <div class="service-tags">
-                    <span class="tag">IA</span>
-                    <span class="tag">Adds</span>
-                    <span class="tag">Cards</span>
-                    <span class="tag">Brand Desing</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-
-
-          </div>
-        </section>
-        <section>
-          <header class="main">
-            <h2>Profesional Experience</h2>
-          </header>
-          <h4> Senior Software Development Engineer (II) at FISERV (Global Fintech)</h4>
-          Team size: 5, May 2021 – April 2024, U.S.A
-          <br>
-          <p> Developed Spring/Angular solutions for payment processing, such as gateway-payments/switches and offered
-            top-tier assistance for financial switching (transactions) among POS terminals, ATM, e-commerce, and
-            financial authorizers with specifications REST, ISO8583, and SOAP. </p>
-          <p> Key Achievements:
-          <ul>
-            <li>Optimized backup time for logs by 60%, bolstering data security and reducing potential system downtime.
-            </li>
-            <li>Implemented integration tests with Selenium, Junit, and Docker, resulting in a 40% decrease in
-              production issues.</li>
-            <li>Contributed to Fiserv Uruguay's success in becoming the first payment network, capturing over 50% of the
-              Uruguayan payments market across all ecosystems in 2022.</li>
-            <li>Prioritized maintaining robust solutions through continuous updates and timely resolution of critical
-              security issues, enabling the company's sustained growth.</li>
-          </ul>
-          </p>
-          <br>
-          <h4> Software Development Engineer at SISNET (Software Provider for Retail)</h4>
-          Team size: 6, Nov 2017 – May 2021, URU
-          <p> Implemented Java backend solutions (Rest/SOAP APIs) using Jakarta, Payara Micro, Cache and Hibernate
-            resulting in a 40% improvement in API response time, and enhanced system POS terminal performance. </p>
-          <p> Key Achievements:
-          <ul>
-            <li>Designed a roadmap to upgrade and transform legacy monolithic to microlites and microservices.</li>
-            <li>Achieved a UI/UX for the Android mobile App and admin panel resulting in satisfaction and positive
-              feedback.</li>
-          </ul>
-          </p>
-          <br>
-          <h4>IT Technical Leader & Senior Software Development Engineer at SASA (Retail auto-parts)</h4>
-          Team size: 6, Sep 2014 – Nov 2017, CUB
-          <p> Configured and planned strategic infrastructure upgrades for 14 on-premises dependencies, delivering a
-            highly available solution that leveraged Hyper-V, Active Directory, RAID, and HP ProLiant servers, achieving
-            a 99.00% increase in system uptime. </p>
-          <p> Key Achievements:
-          <ul>
-            <li>Developed a Java-based solution from the ground up to categorize 5 years of slow-moving inventory at the
-              company, resulting in a cost reduction of $500,000 by applying the Pareto principle.</li>
-            <li>Achieved a 70% decrease in processing time for ETL tasks related to stock status processing using
-              Pentaho and Scala to support parallel processing of large datasets.</li>
-          </ul>
-          </p>
-
-        </section>
-
-        <header class="main">
-          <h2>Tech Stack</h2>
-        </header>
-        </section>
-        <style>
-          .tech-stack {
-            padding-inline: 5%;
-            display: flex;
-            flex-wrap: wrap;
-          }
-
-          .column {
-            flex: 1 1 50%;
-            box-sizing: border-box;
-            padding: 0 5px;
-          }
-
-          h3 {
-            margin-top: 0;
-          }
-        </style>
-        </head>
-
-        <body>
-          <section class="tech-stack">
-            <div class="column">
-              <h3>IDEs</h3>
-              <p>🔧 Eclipse, NetBeans, Visual Studio Code.</p>
-
-              <h3>Build Tools</h3>
-              <p>🔧 Maven & Gradle.</p>
-
-              <h3>Package Managers</h3>
-              <p>📦 Nexus.</p>
-
-              <h3>Libraries and Frameworks</h3>
-              <p>📚 Spring, Hibernate, Apache Struts & Vaadin.</p>
-
-              <h3>Testing</h3>
-              <p>🛠 JUnit, Test-Containers, Mockito & Selenium.</p>
-
-              <h3>Angular</h3>
-              <p>🌐 AngularJS, Angular 4, Angular 17, ng-bootstrap.</p>
-
-              <h3>Cloud Platforms</h3>
-              <p>📦 AWS (Amazon Web Services) Google Cloud Platform.</p>
-
-              <h3>Static Code Analysis</h3>
-              <p>🔐 SonarQube Fortify.</p>
-
-              <h3>JVM</h3>
-              <p>🖥️ Java 8-17, Scala, Kotlin.</p>
-
-              <h3>Code Quality/Analysis</h3>
-              <p>🔍 SonarQube & FindBugs.</p>
-
-              <h3>Performance Monitoring</h3>
-              <p>📊 JProfiler & VisualVM.</p>
-
-              <h3>Security</h3>
-              <p>🛡 OWASP Dependency & Sonatype Nexus.</p>
-
-              <h3>Cloud</h3>
-              <p>🌐 AWS</p>
-
-              <h3>Web Development</h3>
-              <p>🌐 Angular: HTML, CSS, Wix</p>
-
-              <h3>API Documentation</h3>
-              <p>📜 Swagger7</p>
-
-              <h3>Authentication and Authorization</h3>
-              <p>🔐 Spring Security, Keycloak & OAuth.</p>
-            </div>
-            <div class="column">
-              <h3>Database Tools</h3>
-              <p>🔌 MySQL Workbench, SQL Server Developer, SQLite & Flyway</p>
-
-              <h3>ETL Tools</h3>
-              <p>🔌 Pentaho</p>
-
-              <h3>Version Control</h3>
-              <p>🔗 Git & SVN (Subversion)</p>
-
-              <h3>REST/SOAP Clients</h3>
-              <p>📡 Postman & SoapUI</p>
-
-              <h3>Continuous Integration/Deployment (CI/CD)</h3>
-              <p>🛠 Jenkins, Travis CI & GitLab CI</p>
-
-              <h3>Containerization and Orchestration</h3>
-              <p>📦 Docker, Docker-Compose & Kubernetes kubectl</p>
-
-              <h3>Encryption and Decryption</h3>
-              <p>🔐 Bouncy Castle, Jasypt & Keyczar</p>
-
-              <h3>Monitoring and Logging</h3>
-              <p>🔍 ELK Stack, Splunk, Prometheus & Grafana</p>
-
-              <h3>Collaboration and Communication</h3>
-              <p>🛠 Slack, Microsoft Teams, JIRA & Confluence.</p>
-
-              <h3>Code Obfuscation</h3>
-              <p>🔐 ProGuard.</p>
-
-              <h3>Web Development</h3>
-              <p>🌐 Apache Tomcat, Jetty, PayaraMicro & Spring Boot.</p>
-
-              <h3>Package Managers</h3>
-              <p>📦 Apache Maven & Gradle.</p>
-
-              <h3>Analytics and Reporting</h3>
-              <p>📊 Apache POI & JasperReports.</p>
-
-              <h3>API Gateways</h3>
-              <p>🚀 Kong</p>
-
-              <h3>ORM</h3>
-              <p>🔌 Hibernate EclipseLink.</p>
-
-
-            </div>
-
-          </section>
-
-
-      </div>
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid ">
     </div>
 
-    <!-- Sidebar -->
-    <div id="sidebar">
-      <div class="inner">
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h6 class="sitename">Software Development Engineer</h6>
 
-        <div style="display: flex; flex-direction: column; align-items: center;">
-          <h2>{ DEVELOPER SECTION }</h2>
-          <h4>JESUS M ORTIZ HIDALGO</h4>
-          <img src="images/Designer.webp" class="responsive-img animated-icon" style="width: 64px;height: 64px; " />
-          <br />
-          <p align="center">
-            <a href="https://angular.io" target="_blank" rel="noreferrer"><img
-                src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="27" height="27"
-                class="animated-icon"
-                title="+5 Years of experience working in AngularJS, Angular 12 and 17 "></a>&nbsp;&nbsp;&nbsp;&nbsp
-            <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"><img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                alt="aws" width="27" height="27" class="animated-icon"
-                title="+4 Years of experience working in AWS " /></a>&nbsp;&nbsp;&nbsp;&nbsp
-            <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
-                alt="docker" width="27" height="27" class="animated-icon"
-                title="+5 Years of experience working in Docker and Compose " /></a>&nbsp;&nbsp;&nbsp;&nbsp
-            <a href="https://www.linux.org/" target="_blank" rel="noreferrer"><img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
-                alt="linux" width="27" height="27" class="animated-icon"
-                title="+2 Experience working in Linux" /></a>&nbsp;&nbsp;&nbsp;&nbsp
-            <a href="https://www.java.com/en/" target="_blank" rel="noreferrer"><img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java"
-                title="+10 Experience working in Java 7,8,11,17" width="27" height="27"
-                class="animated-icon" /></a>&nbsp;&nbsp;&nbsp;&nbsp
-            <a href="https://developer.android.com/" target="_blank" rel="noreferrer"><img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg"
-                alt="android" width="27" height="27" class="animated-icon"
-                title="+4 Experience working in Android " /></a>
-          </p>
-          <p><strong>I'm a problem solver, not just a &lt;coder/&gt</strong> </p>
-          As a Software Engineer, I have 10 years of experience, including 7+ years as a Java and Angular
-          Developer with a proven track
-          record of success
+    </a>
+
+
+
+
+    <div class="social-links text-center">
+      <a href="https://www.facebook.com/jesusmanuel.ortizhidalgo1/" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://wa.me/17866305797?text=Hi?" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/jesusmoh" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="tel:+1234567890" class="phone"><i class="bi bi-phone"></i class="bi bi-phone"> </a>
+    </div>
+
+    <script>
+      // Function to smoothly scroll to the resume section
+      function scrollToResume() {
+        const target = document.querySelector('#about');
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Add event listener for the click event
+
+      setTimeout(scrollToResume, 22000); // Set a timer for 3 seconds (3000 milliseconds)
+
+    </script>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-braces-asterisk navicon"></i> Skills</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>JESUS ORTIZ</h2>
+        <p>I'm <span class="typed"
+            data-typed-items=" ; a Problem a Solver not just a &lt coder />. ; a Freelancer, feel free to call me (786) 630 5797. ; in Miami,FL. ; a Spanish native speaker. ; ."></span>
+          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+        </p>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+
+        <a href="https://www.linkedin.com/in/jesusmoh/" class="active"><i></i>Professional Track Record</a>
+        <br>
+        <p>As a Senior Software Development Engineer, I have 12 years of experience, including 8+ years as a Java and
+          Angular
+          Developer with a proven track record of success
           in diverse
           projects across the Fintech, Retail, and IT Health Care sectors.
-          </p>
-          <p>My professional journey has included roles
-            such as
-            Senior Java Developer with AWS cloud expertise and Full-Stack Developer for Angular and Android.</p>
-        </div>
+          My professional journey has included roles
+          such as
+          Senior Java Developer with AWS cloud expertise, Full-Stack Developer for Angular/Android and IT department
+          technical leader. As a Freelancer, I have experience, including Web development, IT management and General
+          troubleshooting for Computers, Routers and SmartDevices</p>
+        <br />
 
-        <article class="animated fadeInDown">
-          <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-            <div class="child">
-              <h4>Certifications</h4>
+        <a href="https://infonegocios.biz/default/fiserv-se-convierte-en-la-red-de-terminales-mas-grande-de-uy-la-compania-cuenta-con-30-000-dispositivos"
+          class="active"><i></i>Last Professional Success Results</a>
+        <br>
+        <p>In 2022, I played a key role in Fiserv Uruguay's success in becoming the first payment network, capturing
+          over 50% of
+          the Uruguayan payments market across all environments. As part of the FSwitchUY team, we focused on
+          maintaining robust
+          solutions through continuous updates and timely resolution of critical security issues, enabling the company's
+          sustained
+          growth.</p>
+        <br>
+
+        <a href="https://www.mentalwellnessfl.com/" class="active"><i></i>Last Freelance Success Results</a>
+        <p>In 2024, I received positive feedback for an urgent web project for the Clinic Mental Wellness of Florida.
+          This was a
+          crucial milestone in expanding the business and enhancing its online presence, effectively streamlining the
+          appointment
+          process throughout the site.</p>
+
+
+
+      </div><!-- End Section Title -->
+
+    </section><!-- /About Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <div>
+
+
+            <br>
+          </div><!-- End Section Title -->
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="skills-content skills-animation">
+              <div class="">
+                <div class="row-2">
+                  <div class="d-flex  flex-wrap gap-2 py-1">
+                    <h3><i class="bi bi-stack"></i> Principal Tech Stack
+                      <h3 />
+                      <a href="https://angular.io" target="_blank" rel="noreferrer">
+                        <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular"
+                          class="animated-icon img-fluid" width="30" height="30"
+                          title="+5 Years of experience working in AngularJS, Angular 12 and 17 ">
+                      </a>
+
+                      <a href="https://aws.amazon.com" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                          alt="aws" class="animated-icon img-fluid" width="30" height="30"
+                          title="+4 Years of experience working in AWS ">
+                      </a>
+
+                      <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+                          alt="docker" class="animated-icon img-fluid" width="30" height="30"
+                          title="+5 Years of experience working in Docker and Compose ">
+                      </a>
+
+                      <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                          alt="linux" class="animated-icon img-fluid" width="30" height="30"
+                          title="+2 Experience working in Linux">
+                      </a>
+
+                      <a href="https://www.java.com/en/" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                          alt="java" class="animated-icon img-fluid" width="30" height="30"
+                          title="+10 Experience working in Java 7,8,11,17">
+                      </a>
+                      <a href="https://developer.android.com/" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg"
+                          alt="android" class="animated-icon img-fluid" width="30" height="30"
+                          title="+4 Experience working in Android ">
+                      </a>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="container my-4">
+                <h4 class="mb-3"><i class="bi bi-code"></i> Extended Developer Tech Stack</h4>
+                <p class="text-muted">
+                  <span class="badge bg-secondary">Spring Cloud</span>
+                  <span class="badge bg-secondary">Selenium</span>
+                  <span class="badge bg-secondary">Test-containers</span>
+                  <span class="badge bg-secondary">JMeter</span>
+                  <span class="badge bg-secondary">Git</span>
+                  <span class="badge bg-secondary">Jira</span>
+                  <span class="badge bg-secondary">Wix</span>
+                  <span class="badge bg-secondary">SEO</span>
+                  <span class="badge bg-secondary">AWS</span>
+                  <span class="badge bg-secondary">REST</span>
+                  <span class="badge bg-secondary">SOAP</span>
+                  <span class="badge bg-secondary">API design</span>
+                  <span class="badge bg-secondary">SDKs</span>
+                  <span class="badge bg-secondary">Postgres</span>
+                  <span class="badge bg-secondary">Microservices</span>
+                  <span class="badge bg-secondary">JS</span>
+                  <span class="badge bg-secondary">S3</span>
+                  <span class="badge bg-secondary">Angular</span>
+                  <span class="badge bg-secondary">PHP</span>
+                  <span class="badge bg-secondary">Distributed Systems</span>
+                  <span class="badge bg-secondary">Confluence</span>
+                  <span class="badge bg-secondary">Database Design</span>
+                  <span class="badge bg-secondary">SQL</span>
+                  <span class="badge bg-secondary">NoSQL</span>
+                  <span class="badge bg-secondary">MVC</span>
+                  <span class="badge bg-secondary">Android</span>
+                  <span class="badge bg-secondary">Java</span>
+                  <span class="badge bg-secondary">Docker</span>
+                  <span class="badge bg-secondary">Linux</span>
+                  <span class="badge bg-secondary">WordPress</span>
+                  <span class="badge bg-secondary">HL7</span>
+                  <span class="badge bg-secondary">ETL</span>
+                  <span class="badge bg-secondary">HCE WooCommerce</span>
+                  <span class="badge bg-secondary">PCI</span>
+                  <span class="badge bg-secondary">Serverless</span>
+                  <span class="badge bg-secondary">JSF</span>
+                  <span class="badge bg-secondary">Jakarta</span>
+                  <span class="badge bg-secondary">Grafana</span>
+                  <span class="badge bg-secondary">Zipkin</span>
+                  <span class="badge bg-secondary">log4j</span>
+                  <span class="badge bg-secondary">Prometheus</span>
+                  <span class="badge bg-secondary">Splunk</span>
+                  <span class="badge bg-secondary">JavaEE</span>
+                </p>
+              </div>
+              <br>
+              <div class="container my-4">
+                <h4 class="mb-3"><i class="bi bi-code"></i> Extended Developer Tech Stack</h4>
+                <p class="text-muted">
+                  <span class="badge bg-secondary">Active Directory</span>
+                  <span class="badge bg-secondary">RAID</span>
+                  <span class="badge bg-secondary">HProline</span>
+                  <span class="badge bg-secondary">Hyper-V</span>
+                  <span class="badge bg-secondary">Server</span>
+                  <span class="badge bg-secondary">Squid Proxy</span>
+                  <span class="badge bg-secondary">Load Balancer</span>
+                  <span class="badge bg-secondary">SQL Server</span>
+                  <span class="badge bg-secondary">Windows Server Family</span>
+                  <span class="badge bg-secondary">VPN</span>
+                  <span class="badge bg-secondary">Dropbox</span>
+                  <span class="badge bg-secondary">Workstation Tuning</span>
+                  <span class="badge bg-secondary">Laptop Repair</span>
+                  <span class="badge bg-secondary">Administration of Network Resources</span>
+                  <span class="badge bg-secondary">TeamViewer</span>
+                  <span class="badge bg-secondary">Network Security</span>
+                  <span class="badge bg-secondary">Virtual Private Cloud (VPC)</span>
+                  <span class="badge bg-secondary">Backup Solutions</span>
+                  <span class="badge bg-secondary">Cloud Storage Management</span>
+                  <span class="badge bg-secondary">Remote Desktop Services (RDS)</span>
+                  <span class="badge bg-secondary">Network Monitoring Tools</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
+      </section><!-- /Skills Section -->
+
+
+
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <p>I am an innovative problem solver with extensive experience in software development, delivering
+            high-quality
+            solutions
+            in Fintech, Retail, and IT Healthcare. My focus is on architecture and quality, and I have held roles such
+            as
+            Senior
+            Java Developer with cloud expertise and Full-Stack Developer in Angular and Android.</p>
+        </div><!-- End Section Title -->
+
+
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Contact</h3>
+
+              <div class="resume-item pb-0">
+                <h4>Jesus Ortiz</h4>
+
+                <ul>
+                  <li>Miami, FL 33134</li>
+                  <li>(786) 630-5797</li>
+                  <li>jesusmoh89@gmail.com</li>
+                  <li><a href="https://www.linkedin.com/in/jesusmoh">LinkedIn Profile</a></li>
+                </ul>
+              </div><!-- End Resume Item -->
+
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Bachelor of Science in Software Engineering</h4>
+                <h5>September 2009 - July 2014</h5>
+                <p><em>Technological University of Havana (CUJAE), Cuba</em></p>
+                <p>Comprehensive education focused on software engineering principles and practices.</p>
+                <p>COREMAIN on Healthcare Informatics Standards (HL7/openEHR)</p>
+              </div><!-- End Resume Item -->
+
+              <h3 class="resume-title">Certifications</h3>
               <li><a href="https://www.credly.com/badges/6b61c437-928d-4be6-9f60-180a9af32068/linked_in_profile">AWS
                   Certified Developer Associate</a></li>
               <li><a href="https://www.credly.com/badges/243481f4-3bd3-43cc-be1f-a84ae639effd/linked_in_profile">AWS
@@ -543,130 +361,519 @@
                   Certified Cloud Practitioner</a></li>
               <li><a href="https://verify.acloud.guru/5BCFE3B8F245">ACG Kubernetes & Terraform</a></li>
               <li><a href="https://verify.acloud.guru/AFA918430461">AWS DynamoDB Deep Dive</a></li>
-            </div>
-            <br>
-            <div class="child">
-              <br>
-              <h4>Education</h4>
-              <li>Bachelor of Science in Software Engineering at the Technological University of Havana (CUJAE)</li>
-            </div>
-            <br>
 
+              <h3 class="resume-title">I'm freelance too..</h3>
+              <div class="resume-item">
 
+                <img src="assets/img/pp.gif" style="height: 200px; width: 300px;" />
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Professional Experience</h3>
+
+              <div class="resume-item">
+                <h4>Senior Software Development Engineer (II)</h4>
+                <h5>May 2021 - April 2024</h5>
+                <p><em>FISERV, U.S.A</em></p>
+                <ul>
+                  <li>Developed Spring/Angular solutions for payment processing, enhancing transaction security and
+                    efficiency.</li>
+                  <li>Optimized log backup times by 60%, improving data security and reducing downtime.</li>
+                  <li>Implemented integration tests that decreased production issues by 40%.</li>
+                  <li>Contributed to Fiserv Uruguay's success in capturing over 50% of the Uruguayan payments market.
+                  </li>
+                </ul>
+              </div><!-- End Resume Item -->
+
+              <div class="resume-item">
+                <h4>Senior Software Development Engineer</h4>
+                <h5>November 2017 - May 2021</h5>
+                <p><em>SISNET, Uruguay</em></p>
+                <ul>
+                  <li>Implemented Java backend solutions resulting in a 40% improvement in API response times.</li>
+                  <li>Designed a roadmap for transforming legacy systems into microservices.</li>
+                  <li>Achieved positive feedback for UI/UX improvements on mobile applications.</li>
+                </ul>
+              </div><!-- End Resume Item -->
+
+              <div class="resume-item">
+                <h4>IT Technical Leader & Senior Software Development Engineer</h4>
+                <h5>September 2014 - November 2017</h5>
+                <p><em>SASA, Cuba</em></p>
+                <ul>
+                  <li>Configured strategic infrastructure upgrades achieving a 99% increase in system uptime.</li>
+                  <li>Developed a Java solution that reduced slow-moving inventory costs by $500,000.</li>
+                  <li>Achieved a 70% decrease in ETL processing time using Pentaho and Scala.</li>
+                </ul>
+              </div><!-- End Resume Item -->
+
+            </div>
 
           </div>
-        </article>
-        <!-- Section -->
-        <section>
-          <div>
-            <button><a href="https://jesusmoh.github.io/jesusOrtizResume_jesusmoh89@gmail.com.pdf"
-                class="animated3 zoomInDown buttonDownload " aria-label="Download Resume as PDF for Developer Scope">
-                ⬇️ Resume (Developer Scope)</button>
-            </a>
-          </div>
+
+        </div>
+
+      </section><!-- /Resume Section -->
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>Welcome to our Portfolio! Here, you’ll find a curated collection of our most notable projects that showcase
+            our
+            expertise, creativity, and commitment to excellence. Each project reflects our dedication to delivering
+            high-quality
+            solutions tailored to meet the unique needs of our clients.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-professionally">Professionally</li>
+              <li data-filter=".filter-freelancer">Freelancer</li>
+            </ul><!-- End Portfolio Filters -->
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-freelancer">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/pic01.webp" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>HIROMI ASAI WEB PAGE</h4>
+                    <p>WIX | SEO | SAAS | WEB DESIGN</p>
+                    <a href="assets/img/portfolio/pic01.webp" title="HIROMI ASAI WEB PAGE"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="https://www.hiromiasainy.com/collection" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-freelancer">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/pic05.webp" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>MENTALWELLNESS FL WEB PAGE</h4>
+                    <p>WIX | SEO | SAAS | WEB DESIGN</p>
+                    <a href="assets/img/portfolio/pic05.webp" title="Mental Wellness of Florida WEB PAGE"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="https://www.mentalwellnessfl.com/" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-freelancer">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/pic17.webp" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Z. Rafael Abad WEB PAGE</h4>
+                    <p>GODADDY | SEO | SAAS | WEB DESIGN</p>
+                    <a href="assets/img/portfolio/pic17.webp" title="Z. RAFAEL ABAD WEB PAGE"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="https://www.drabadmd.com/" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-professionally">
+                <div class=" portfolio-content h-100">
+                  <img src="assets/img/portfolio/pic09.webp" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>PAYMENT GATEWAY FISERV URUGUAY</h4>
+                    <p>JAVA + Spring | Angular 17 | SQL Server | Spring Cloud</p>
+                    <a href="assets/img/portfolio/pic09.webp" title="PAYMENT GATEWAY FISERV URUGUAY"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="https://www.fiserv.com.uy/" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div><!-- End Portfolio Container -->
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-professionally">
+                <div class=" portfolio-content h-100">
+                  <img src="assets/img/portfolio/pic15.webp" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>ECOMMERCE INTEGRATION URUGUAY</h4>
+                    <p>PHP | CPANEL | REST | WOOCOMERCE | WOORDPRESS</p>
+                    <a href="assets/img/portfolio/pic15.webp" title="ECOMMERCE INTEGRATION URUGUAY"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="https://detodaspartes.com.uy/product-category/mayorista/alimentos/" title="More Details"
+                      class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div><!-- End Portfolio Container -->
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-professionally">
+                <div class=" portfolio-content h-100">
+                  <img src="assets/img/portfolio/pic08.webp" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>MOVILE SISNET URUGUAY</h4>
+                    <p>Android | SQLite | JAVA/DOCKER |JSF/PAYARA | SOAP | REST</p>
+                    <a href="assets/img/portfolio/pic08.webp" title="MOVILE SISNET URUGUAY"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="https://www.sisnet.com.uy/movil.php" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-professionally">
+                <div class=" portfolio-content h-100">
+                  <img src="assets/img/portfolio/pic03.webp" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>AUTOMOTORS S.A INFRASTRUCTURE DEPLOYMENT</h4>
+                    <p>WINDOWS SERVER | RAID | HYPER-V | HP Proline | NETWORKING</p>
+                    <a href="assets/img/portfolio/pic03.webp" title="AUTOMOTORS S.A INFRASTRUCTURE DEPLOYMENT"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="https://www.sasa.com.cu/" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-freelancer">
+                <div class=" portfolio-content h-100">
+                  <img src="assets/img/portfolio/pic04.webp" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>TROUBLESHOOTING</h4>
+                    <p>REPAIR SERVERS AND COMPUTERS</p>
+                    <a href="assets/img/portfolio/pic04.webp" title="TROUBLESHOOTING"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="https://www.sisnet.com.uy/movil.php" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-freelancer">
+                <div class=" portfolio-content h-100">
+                  <img src="assets/img/portfolio/pic16.webp" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>BRAND DESING</h4>
+                    BUSINESS CARD |
+                    ANIMATIONS |QR DESIGN</p>
+                    <a href="assets/img/portfolio/pic16.webp" title="BRAND DESING" data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://jesusmoh.github.io/" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+
+
+            </div>
+
+      </section><!-- /Portfolio Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>We offer a wide range of IT services to meet your needs, ensuring efficiency and effectiveness in every
+            project.
+            Our expertise covers everything from repairs to cloud solutions.</p>
           <br>
-          <div>
-            <button>
-              <a href="https://jesusmoh.github.io/IT_jesusOrtizResume_jesusmoh89@gmail.com.pdf"
-                class="animated3 zoomInDown buttonDownload" aria-label="Download Resume as PDF for IT Scope">
-                ⬇️ Resume (IT Scope)
-              </a>
-            </button>
-          </div>
-          <br />
-          <div><button onclick="typeWriter()">Show Developer Skills</button>
-            <p id="demo"></p>
-            <script>
-              var i = 0;
-              var txt = 'Spring Cloud | Selenium | Test-containers | JMeter | Git | Jira | Wix | SEO |AWS | REST | SOAP | API   design | SDKs | Postgres | Microservices | JS | S3 | Angular | PHP | Distributed Systems | Confluence | Database | Design | SQL | NoSQL | MVC | Android | Java | Docker | Linux | WordPress | HL7 | ETL | HCE  WooCommerce | PCI | Serverless | JSF | Jakarta | JavaEE';
-              var speed = 15;
+        </div><!-- End Section Title -->
 
-              function typeWriter() {
-                if (i < txt.length) {
-                  document.getElementById("demo").innerHTML += txt.charAt(i);
-                  i++;
-                  setTimeout(typeWriter, speed);
-                }
+        <div class="container">
+          <div class="row gy-4">
+
+            <!-- Service Item: Computers -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon flex-shrink-0"><i class="bi bi-laptop"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Computers</a></h4>
+                <p class="description">Repairs & Upgrades, Software Installation, Troubleshooting, Virus & Data
+                  Recovery.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <!-- Service Item: Networking & Security -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon flex-shrink-0"><i class="bi bi-shield-lock"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Networking & Security</a></h4>
+                <p class="description">Comprehensive networking solutions and security measures to protect your data.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <!-- Service Item: Web Development -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Web Development</a></h4>
+                <p class="description">Responsive Web Design, Web Applications, E-commerce Solutions, API Development.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <!-- Service Item: Project Management -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon flex-shrink-0"><i class="bi bi-calendar-check"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Project Management</a></h4>
+                <p class="description">Budgets & Projects, IT investments, Planning Projects, Timely project delivery.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <!-- Service Item: Servers and Cloud -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon flex-shrink-0"><i class="bi bi-server"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Servers and Cloud</a></h4>
+                <p class="description">Increased Scalability, Increased Flexibility, Enhanced Security, Enhanced
+                  Compliance.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <!-- Service Item: Cost Efficiency -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+              <div class="icon flex-shrink-0"><i class="bi bi-cash"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Cost Efficiency</a></h4>
+                <p class="description">Decrease cost while ensuring efficient resource utilization across all projects.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <!-- New Service Item: IT Consulting -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="700">
+              <div class="icon flex-shrink-0"><i class="bi bi-person-check"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">IT Consulting</a></h4>
+                <p class="description">Expert advice on IT strategy, infrastructure optimization, and technology
+                  integration.
+                </p>
+              </div>
+            </div><!-- End New Service Item -->
+
+            <!-- New Service Item: Data Analysis -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="800">
+              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart-line"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Data Analysis</a></h4>
+                <p class="description">Transforming raw data into actionable insights for better decision-making.</p>
+              </div>
+            </div><!-- End New Service Item -->
+
+            <!-- New Service Item: Mobile App Development -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="900">
+              <div class="icon flex-shrink-0"><i class="bi bi-phone"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Mobile App Development</a></h4>
+                <p class="description">Custom mobile applications for iOS and Android to enhance user engagement.</p>
+              </div>
+            </div><!-- End New Service Item -->
+
+          </div><!-- End Row -->
+        </div><!-- End Container -->
+
+      </section><!-- /Services Section -->
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>What Our Clients Say</h2>
+          <p>Discover how our services have transformed businesses and satisfied clients.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            },
+            "breakpoints": {
+              "320": {
+                "slidesPerView": 1,
+                "spaceBetween": 40
+              },
+              "1200": {
+                "slidesPerView": 3,
+                "spaceBetween": 1
               }
-            </script>
-            <button onclick="typeWriter2()">Show IT/SysAdmin Skills</button>
-            <p id="demo2"></p>
-            <script>
-              var i2 = 0;
-              var txt2 = 'Active Directory | RAID | HProline | Hyper-V | Server | Squid Proxy | Load Balancer | SQL Server | WindowsServer Family | VPN | Dropbox | Workstation Tunning | Laptop Repair | Administration of network resources | TeamViewer';
-              var speed2 = 15;
+            }
+          }
+          </script>
+            <div class="swiper-wrapper">
 
-              function typeWriter2() {
-                if (i2 < txt2.length) {
-                  document.getElementById("demo2").innerHTML += txt2.charAt(i2);
-                  i2++;
-                  setTimeout(typeWriter2, speed2);
-                }
-              }
-            </script>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The IT solutions provided were top-notch! They understood our needs and delivered exactly what
+                      we
+                      were looking for.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Hiromi Asai</h3>
+                  <h4>Fashion Designer</h4>
+                  <a href="https://www.hiromiasainy.com/collection" title="Hiromi Asai Collection"
+                    class="details-link"><i class="bi bi-link-45deg"></i>www.hiromiasainy.com</a>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>I was impressed with their quick turnaround time and attention to detail. Highly recommend for
+                      any
+                      tech-related projects!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3> Lisandra Hernandez</h3>
+                  <h4>Doctor of Nursing Practice (DNP) & CEO</h4>
+                  <a href="https://www.mentalwellnessfl.com/" title="Mental Wellness of FLorida" class="details-link"><i
+                      class="bi bi-link-45deg"></i>mentalwellnessfl</a>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Their support during our software migration was invaluable. They made a complex process
+                      seamless and
+                      stress-free!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Z. Rafael Abad, M.D.</h3>
+                  <h4>Board Certified Family Medicine</h4>
+                  <a href="https://www.drabadmd.com/" title="Doctor Z. Rafael Abad" class="details-link"><i
+                      class="bi bi-link-45deg"></i>www.drabadmd.com</a>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+
           </div>
-        </section>
-        <section>
-          <header class="major">
-            <h2>Social Network</h2>
-          </header>
-          <div class="mini-posts">
 
-            <article>
-              <a href="https://wa.me/17866305797?text=Hi?" class="image"><img src="images/pic14.webp" alt="" /></a>
-            </article>
-            <article>
-              <a href="https://www.linkedin.com/in/jesusmoh/" class="image"><img src="images/pic12.webp" alt="" /></a>
-            </article>
-            <article>
-              <a href="https://github.com/jesusmoh" class="image"><img src="images/pic13.webp" alt="" /></a>
-            </article>
-            <article>
-              <a href="https://www.credly.com/badges/243481f4-3bd3-43cc-be1f-a84ae639effd/linked_in_profile"
-                class="image"><img src="images/AWSA.webp" alt="" /></a>
-            </article>
-            <article>
-              <a href="https://www.credly.com/badges/6b61c437-928d-4be6-9f60-180a9af32068/linked_in_profile"
-                class="image"><img src="images/AWSD.webp" alt="" /></a>
-            </article>
-            <article>
-              <a href="https://www.credly.com/badges/f7f2eec0-73ad-486e-b239-6d6111ef537f/linked_in_profile"
-                class="image"><img src="images/AWSP.webp" alt="" /></a>
-            </article>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+
+        </div>
+
+        </div>
+
+      </section><!-- /Testimonials Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>To get in touch with Jesus Manuel Ortiz, please reach out via the following contact details:</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-5">
+
+              <div class="info-wrap">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p> 33134,FL</p>
+                  </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call Us</h3>
+                    <p>+1 786 630 5797</p>
+                  </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p>jesusmoh89@gmail.com</p>
+                  </div>
+                </div><!-- End Info Item -->
+
+
+              </div>
+            </div>
+
 
           </div>
 
-        </section>
+        </div>
 
-        <!-- Section -->
-        <section>
-          <header class="major">
-            <h2>Get in touch</h2>
-          </header>
-          <p>
-            To get in touch with Jesus Manuel Ortiz, please reach out via the following contact details:
-          </p>
-          <ul class="contact">
-            <li class="icon solid fa-envelope"><a href="#">jesusmoh89@gmail.com</a></li>
-            <li class="icon solid fa-phone">(786) 630 5797</li>
-            <li class="icon solid fa-home"> Miami,Fl</li>
-            <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/jesusmoh">jesusmoh</a></li>
-            <li class="icon brands fa-github"><a href="https://github.com/jesusmoh">jesusmoh</a></li>
+      </section><!-- /Contact Section -->
 
-          </ul>
-        </section>
+  </main>
 
+  <footer id="footer" class="footer position-relative light-background">
 
-      </div>
-    </div>
-  </div>
+  </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
