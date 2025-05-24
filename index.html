@@ -3,18 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>jesus's Web Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesus Ortiz | Software Development Engineer</title>
 
   <!-- Favicon -->
   <link rel="icon" href="assets/img/favi.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="assets/img/favi.ico" type="image/x-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -26,55 +25,32 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
-
+  <!-- Header -->
   <header id="header" class="d-flex flex-column dark-background header">
     <i class="d-xl-none bi bi-list header-toggle"></i>
-    <br>
-
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid">
+      <img src="assets/img/my-profile-img.jpg" alt="Profile Image" class="img-fluid">
     </div>
 
-    <a href="index.html" class="d-flex align-items-center justify-content-center logo">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
+    <a href="#hero" class="d-flex align-items-center justify-content-center logo">
       <h6 class="sitename">Software Development Engineer</h6>
-
     </a>
-
-
-
 
     <div class="text-center social-links">
       <a href="https://www.facebook.com/jesusmanuel.ortizhidalgo1/" class="facebook"><i class="bi bi-facebook"></i></a>
       <a href="https://wa.me/17866305797?text=Hi?" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
       <a href="https://www.linkedin.com/in/jesusmoh" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="tel:+1234567890" class="phone"><i class="bi bi-phone"></i class="bi bi-phone"> </a>
+      <a href="tel:+17866305797" class="phone"><i class="bi bi-phone"></i></a>
     </div>
 
     <script>
-      // Function to smoothly scroll to the resume section
-      function scrollToResume() {
-        const target = document.querySelector('#about');
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-
-      // Add event listener for the click event
-
-      setTimeout(scrollToResume, 12000); // Set a timer for 3 seconds (3000 milliseconds)
-
+      setTimeout(() => {
+        document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+      }, 10000);
     </script>
 
     <nav id="navmenu" class="navmenu">
@@ -83,15 +59,12 @@
         <li><a href="#about"><i class="navicon bi bi-person"></i> About</a></li>
         <li><a href="#services"><i class="navicon bi bi-hdd-stack"></i> Services</a></li>
         <li><a href="#portfolio"><i class="navicon bi bi-images"></i> Portfolio</a></li>
-
         <li><a href="#skills"><i class="navicon bi bi-braces-asterisk"></i> Skills</a></li>
         <li><a href="#resume"><i class="navicon bi bi-file-earmark-text"></i> Resume</a></li>
         <li><a href="#contact"><i class="navicon bi bi-envelope"></i> Contact</a></li>
       </ul>
     </nav>
-
   </header>
-
   <main class="main">
 
     <!-- Hero Section -->
@@ -107,7 +80,7 @@
 
         <br>
         <p>I'm <span class="typed"
-            data-typed-items=" ; a Problem a Solver not just a &lt coder />.; in Miami,FL.; open to work.;"></span>
+            data-typed-items=" ; a Problem a Solver not just a &lt coder />.; in Miami,FL.;"></span>
           <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
           <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
         </p>
@@ -123,7 +96,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2><i class="navicon bi bi-person"></i> About</h2>
+        <h3><i class="navicon bi bi-person"></i> About</h3>
         <p>As a Senior Software Development Engineer, I have 12 years of experience with a proven track record of
           success
           in diverse
@@ -143,31 +116,22 @@
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2><i class="navicon bi bi-hdd-stack"></i> Services</h2>
+          <h3><i class="navicon bi bi-hdd-stack"></i> Services</h3>
         </div><!-- End Section Title -->
 
         <div class="container">
           <div class="row gy-4">
 
-            <!-- Service Item: Computers -->
-            <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="100">
-              <div class="flex-shrink-0 icon"><i class="bi bi-laptop"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Computers</a></h4>
-                <p class="description">Repairs & Upgrades, Software Installation, Troubleshooting, Virus & Data
-                  Recovery.</p>
-              </div>
-            </div><!-- End Service Item -->
 
-            <!-- Service Item: Networking & Security -->
-            <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="200">
-              <div class="flex-shrink-0 icon"><i class="bi bi-shield-lock"></i></div>
+            <!-- New Service Item: Data Analysis -->
+            <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="800">
+              <div class="flex-shrink-0 icon"><i class="bi bi-bar-chart-line"></i></div>
               <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Networking & Security</a></h4>
-                <p class="description">Comprehensive networking solutions and security measures to protect your data.
-                </p>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Data Analysis</a></h4>
+                <p class="description">Transforming raw data into actionable insights for better decision-making.</p>
               </div>
-            </div><!-- End Service Item -->
+            </div><!-- End New Service Item -->
+
 
             <!-- Service Item: Web Development -->
             <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="300">
@@ -176,6 +140,16 @@
                 <h4 class="title"><a href="service-details.html" class="stretched-link">Web Development</a></h4>
                 <p class="description">Responsive Web Design, Web Applications, E-commerce Solutions, API Development.
                 </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <!-- Service Item: Computers -->
+            <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="flex-shrink-0 icon"><i class="bi bi-laptop"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Computers</a></h4>
+                <p class="description">Repairs & Upgrades, Software Installation, Troubleshooting, Virus & Data
+                  Recovery.</p>
               </div>
             </div><!-- End Service Item -->
 
@@ -199,6 +173,18 @@
               </div>
             </div><!-- End Service Item -->
 
+            <!-- Service Item: Networking & Security -->
+            <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="flex-shrink-0 icon"><i class="bi bi-shield-lock"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Networking & Security</a></h4>
+                <p class="description">Comprehensive networking solutions and security measures to protect your data.
+                </p>
+              </div>
+            </div><!-- End Service Item -->
+
+
+
             <!-- Service Item: Cost Efficiency -->
             <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="600">
               <div class="flex-shrink-0 icon"><i class="bi bi-cash"></i></div>
@@ -220,14 +206,7 @@
               </div>
             </div><!-- End New Service Item -->
 
-            <!-- New Service Item: Data Analysis -->
-            <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="800">
-              <div class="flex-shrink-0 icon"><i class="bi bi-bar-chart-line"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">Data Analysis</a></h4>
-                <p class="description">Transforming raw data into actionable insights for better decision-making.</p>
-              </div>
-            </div><!-- End New Service Item -->
+
 
             <!-- New Service Item: Mobile App Development -->
             <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="900">
@@ -248,7 +227,7 @@
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2><i class="navicon bi bi-images"></i> Portfolio</h2>
+          <h3><i class="navicon bi bi-images"></i> Portfolio</h3>
         </div><!-- End Section Title -->
 
         <div class="container">
@@ -412,7 +391,7 @@
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2><i class="navicon bi bi-braces-asterisk"></i> Skills</h2>
+          <h3><i class="navicon bi bi-braces-asterisk"></i> Skills</h3>
           <div>
 
 
@@ -524,7 +503,7 @@
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2><i class="navicon bi bi-file-earmark-text"></i> Resume</h2>
+          <h3><i class="navicon bi bi-file-earmark-text"></i> Resume</h3>
           <p>I am an innovative problem solver with extensive experience in software development, delivering
             high-quality
             solutions
@@ -569,7 +548,7 @@
 
               <div class="resume-item">
                 <h4>Data Analyst</h4>
-                <h5>Nov 2024..</h5>
+                <h5>May 2024..</h5>
                 <p><em>Palm Medical Centers, U.S.A</em></p>
                 <ul>
                   <li>I'm developing and managing data workflows for various healthcare systems and data providers,
@@ -846,7 +825,9 @@
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+  <!-- Main content will follow here -->
+
+  <!-- Scripts -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
@@ -856,8 +837,6 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
