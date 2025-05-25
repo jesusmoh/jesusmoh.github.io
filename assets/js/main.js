@@ -226,3 +226,80 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 })();
+// Initialize Portfolio Carousel
+document.addEventListener('DOMContentLoaded', function() {
+  new Swiper('.portfolio-carousel', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.portfolio-carousel .swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      }
+    }
+  });
+});
+// Initialize Portfolio Carousel
+document.addEventListener('DOMContentLoaded', function() {
+  new Swiper('.portfolio-carousel', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    }
+  });
+});
+// Skills Gallery Animation
+document.addEventListener('DOMContentLoaded', function() {
+  // Add staggered animation to skill items
+  document.querySelectorAll('.tab-pane').forEach(function(tabPane) {
+    const skillItems = tabPane.querySelectorAll('.skill-item');
+    skillItems.forEach(function(item, index) {
+      item.style.animationDelay = (index * 0.05) + 's';
+    });
+  });
+  
+  // Re-trigger animations when tab changes
+  document.querySelectorAll('#skillsTabs .nav-link').forEach(function(tab) {
+    tab.addEventListener('shown.bs.tab', function(e) {
+      const targetId = e.target.getAttribute('data-bs-target');
+      const skillItems = document.querySelector(targetId).querySelectorAll('.skill-item');
+      
+      skillItems.forEach(function(item, index) {
+        item.style.opacity = 0;
+        setTimeout(function() {
+          item.style.opacity = 1;
+          item.style.transform = 'translateY(0)';
+        }, index * 50);
+      });
+    });
+  });
+});
